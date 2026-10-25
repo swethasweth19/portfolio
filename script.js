@@ -1,77 +1,163 @@
-// Mobile Navigation Toggle
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+/**
+ * V Swetha Portfolio — Interactive Behaviors
+ * Optimized for snappy interaction and high performance
+ */
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    // Change icon between bars and times (close)
-    const icon = hamburger.querySelector('i');
-    if(navLinks.classList.contains('active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
-    } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
+document.addEventListener('DOMContentLoaded', () => {
+
+    // 1. Mobile Navigation Toggle
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    if (hamburgerBtn && navMenu) {
+        hamburgerBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const bars = hamburgerBtn.querySelectorAll('.bar');
+            if (navMenu.classList.contains('open')) {
+                bars[0].style.transform = 'translateY(7px) rotate(45deg)';
+                bars[1].style.opacity = '0';
+                bars[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+            } else {
+                bars[0].style.transform = 'none';
+                bars[1].style.opacity = '1';
+                bars[2].style.transform = 'none';
+            }
+        });
+
+        // Close menu on link click
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('open')) {
+                    navMenu.classList.remove('open');
+                    const bars = hamburgerBtn.querySelectorAll('.bar');
+                    bars[0].style.transform = 'none';
+                    bars[1].style.opacity = '1';
+                    bars[2].style.transform = 'none';
+                }
+            });
+        });
     }
-});
 
-// Close mobile nav when clicking a link
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        const icon = hamburger.querySelector('i');
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-    });
-});
-
-// Navbar background change on scroll
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-    if(window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
-
-// Fade in elements on scroll using Intersection Observer
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-            observer.unobserve(entry.target);
+    // 2. Navbar Scrolled State
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
+    }, { passive: true });
+
+    // 3. Situation & Engineering Solution Deep-Dive Toggle (Case Studies)
+    const deepdiveToggles = document.querySelectorAll('.deepdive-toggle');
+
+    deepdiveToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            const content = toggle.nextElementSibling;
+
+            // Toggle active state
+            toggle.setAttribute('aria-expanded', !isExpanded);
+            
+            if (!isExpanded) {
+                content.classList.add('open');
+            } else {
+                content.classList.remove('open');
+            }
+        });
     });
-}, observerOptions);
 
-// Select all cards and sections to animate
-const animElements = document.querySelectorAll('.glass-card, .section-title');
+    // 4. Subtle Slide-up Fade-in on Scroll (Intersection Observer API - Prompt 3)
+    if ('IntersectionObserver' in window) {
+        const observerOptions = {
+            root: null,
+            rootMargin: '100px 0px',
+            threshold: 0.05
+        };
 
-animElements.forEach(el => {
-    // Set initial state
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    // Observe
-    observer.observe(el);
-});
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-on-scroll');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-// Add subtle parallax to background blobs
-document.addEventListener('mousemove', (e) => {
-    const blobs = document.querySelectorAll('.blob');
-    const x = e.clientX / window.innerWidth;
-    const y = e.clientY / window.innerHeight;
-    
-    blobs[0].style.transform = `translate(${x * 30}px, ${y * 30}px)`;
-    blobs[1].style.transform = `translate(${x * -40}px, ${y * -40}px)`;
-    blobs[2].style.transform = `translate(${x * 20}px, ${y * -20}px)`;
+        const animTargets = document.querySelectorAll('.timeline-item, .project-card, .credential-card, .achievement-feature-card, .skill-category-card');
+        animTargets.forEach(el => {
+            scrollObserver.observe(el);
+        });
+    }
+
+    // 5. Interactive Lightbox Modal for Real Photos
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxBackdrop = document.getElementById('lightboxBackdrop');
+    const photoThumbnails = document.querySelectorAll('.photo-thumbnail');
+
+    if (lightboxModal && lightboxImg && lightboxCaption) {
+        photoThumbnails.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const src = thumb.getAttribute('data-src');
+                const caption = thumb.getAttribute('data-caption') || '';
+                lightboxImg.src = src;
+                lightboxCaption.textContent = caption;
+                lightboxModal.classList.add('active');
+                lightboxModal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        const closeLightbox = () => {
+            lightboxModal.classList.remove('active');
+            lightboxModal.setAttribute('aria-hidden', 'true');
+            lightboxImg.src = '';
+            document.body.style.overflow = '';
+        };
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    }
+
+    // 6. Copy Email to Clipboard with Toast Notification
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const toast = document.getElementById('toastMessage');
+
+    if (copyEmailBtn && toast) {
+        copyEmailBtn.addEventListener('click', async () => {
+            const email = 'swethasweth1923@gmail.com';
+            try {
+                await navigator.clipboard.writeText(email);
+                showToast('Email address copied to clipboard!');
+            } catch (err) {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showToast('Email address copied to clipboard!');
+            }
+        });
+    }
+
+    function showToast(message) {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 2600);
+    }
 });

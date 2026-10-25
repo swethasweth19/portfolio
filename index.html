@@ -3,337 +3,1008 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V Swetha | AI/ML Portfolio</title>
-    <meta name="description" content="Portfolio of V Swetha, an AI & ML undergraduate specializing in machine learning, NLP, and software development.">
-    <!-- Google Fonts -->
+    <title>V Swetha | AI/ML & Software Developer</title>
+    <meta name="description" content="Portfolio of V Swetha — Software Developer specializing in AI/ML, NLP, Python, and Full-Stack Development. MongoDB Certified Associate Developer & Oracle Certified Generative AI Professional.">
+    <meta name="keywords" content="V Swetha, Software Developer, AI ML Engineer, Python Developer, MongoDB Certified, FastAPI, Machine Learning, Bengaluru">
+    <meta name="author" content="V Swetha">
+
+    <!-- Fonts: Outfit for display, Inter for body, Fira Code for code tokens -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Background Animation -->
-    <div class="bg-animation">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
 
-    <!-- Navigation -->
+    <!-- Minimalist Top Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="logo">VS<span class="dot">.</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <span class="brand-bracket">&lt;</span>VS<span class="brand-dot">.</span><span class="brand-bracket">/&gt;</span>
+            </a>
+            
+            <div class="nav-status-badge">
+                <span class="status-dot"></span>
+                <span>Open to Software & AI/ML Roles</span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#credentials" class="nav-link">Certifications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements & Photos</a></li>
+                <li><a href="#contact" class="nav-link cta-nav">Contact</a></li>
+            </ul>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h2 class="greeting">Hello, I'm</h2>
-            <h1 class="name">V Swetha</h1>
-            <h3 class="title">AI/ML Undergraduate <span class="highlight">& Developer</span></h3>
-            <p class="summary">
-                Passionate about building scalable AI pipelines, exploring Generative AI, and developing innovative software solutions.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Let's Connect</a>
-            </div>
-            <div class="social-links-hero">
-                <a href="https://github.com/swethasweth19" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/v-swetha-5b9996329" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:swethasweth1923@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-        <div class="hero-image-container">
-            <!-- PLACEHOLDER FOR YOUR PROFILE IMAGE -->
-            <!-- Save your image as profile.jpg in an 'assets' folder and uncomment the img tag below -->
-            <div class="image-placeholder">
-                <img src="./assets/profile.jpg" alt="V Swetha" id="profile-pic" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="fallback-icon"><i class="fas fa-user-astronaut"></i><p>Add profile.jpg in assets/</p></div>
-            </div>
-        </div>
-    </header>
+    <main>
+        <!-- Hero Section -->
+        <header id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text-content">
+                    <div class="hero-pill">
+                        <i class="fas fa-terminal"></i>
+                        <span>Python • AI/ML • FastAPI • MongoDB • Streamlit • Java</span>
+                    </div>
+                    
+                    <h1 class="hero-name">V SWETHA</h1>
+                    
+                    <h2 class="hero-headline">
+                        Software Developer | Specializing in AI/ML, NLP, & Full-Stack Web
+                    </h2>
+                    
+                    <p class="hero-bio">
+                        Engineering robust machine learning pipelines, IoT embedded systems, and scalable backend applications. Proven track record in National Level technical expos, enterprise software engineering with Infosys Springboard, and globally verified MongoDB development.
+                    </p>
+                    
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary" id="btnViewProjects">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btnDownloadResume">
+                            <i class="fas fa-file-arrow-down"></i>
+                            <span>Get In Touch / Resume</span>
+                        </a>
+                    </div>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2 class="section-title">About <span class="highlight">Me</span></h2>
-        <div class="about-content glass-card">
-            <p class="about-text">
-                I am a Computer Science (AI & ML) undergraduate at Nagarjuna College of Engineering and Technology, Bengaluru, with an 8.93 CGPA and a strong foundation in Python, Java, Machine Learning, and NLP. 
-            </p>
-            <p class="about-text">
-                My passion lies in building end-to-end data pipelines, working with IoT hardware integrations, and crafting scalable software solutions. I am actively seeking roles in AI/ML Engineering, Data Analytics, and Software Development where I can leverage my hands-on experience with Generative AI, cloud deployment, and advanced data preprocessing.
-            </p>
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023 – 2027</div>
-                    <div class="timeline-info">
-                        <h4>B.Tech CSE (AI & ML)</h4>
-                        <p>Nagarjuna College of Engineering and Technology, Bengaluru</p>
-                        <span class="badge">CGPA: 8.93/10</span>
+                    <div class="hero-social-links">
+                        <a href="https://github.com/swethasweth19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/v-swetha-5b9996329" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:swethasweth1923@gmail.com" aria-label="Send Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 – 2023</div>
-                    <div class="timeline-info">
-                        <h4>Intermediate (MPC)</h4>
-                        <p>Narayana Junior College, Hindupur</p>
-                        <span class="badge">Percentage: 90%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <h2 class="section-title">Professional <span class="highlight">Experience</span></h2>
-        <div class="experience-card glass-card">
-            <div class="exp-header">
-                <h3>Infosys Springboard Internship 7.0 (Batch 3)</h3>
-                <span class="date-badge">August 2026 – Present</span>
-            </div>
-            <ul class="task-list">
-                <li>Selected for a competitive technical internship program to advance skills in modern software development, targeting a 100% completion rate of enterprise engineering modules.</li>
-                <li>Engaging in 3 specialized training modules to bridge core academic computer science concepts with real-world enterprise technology implementations.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
-        <div class="projects-grid">
-            
-            <!-- Project 1 -->
-            <div class="project-card glass-card">
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span>Python</span><span>Machine Learning</span>
-                    </div>
-                    <h3>Trash to Tech (Smart Waste Management)</h3>
-                    <p>Architected a machine learning-based waste classification system by engineering a large-scale corpus, achieving over 85% categorization accuracy.</p>
-                    <ul class="task-list small-text">
-                        <li>Implemented a 4R mapping methodology for sustainability.</li>
-                        <li>Presented to 500+ attendees at Tech Vision 2026 expo.</li>
-                        <li>Awarded 2nd Prize out of 50+ competing teams at National Level Project Expo.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card glass-card">
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span>Raspberry Pi</span><span>Python</span><span>APIs</span>
-                    </div>
-                    <h3>SmartMirror-Vox (IoT Voice-Enabled)</h3>
-                    <p>Designed an IoT-driven smart mirror on Raspberry Pi, integrating speech recognition APIs for hands-free commands with under 2s latency.</p>
-                    <ul class="task-list small-text">
-                        <li>Programmed 4 responsive display modules for weather, news, date, and time.</li>
-                        <li>Constructed backend scripts to streamline API calls, improving efficiency by 30%.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card glass-card">
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span>Python</span><span>NLTK</span><span>GitHub</span>
-                    </div>
-                    <h3>NLP Text Processing Pipeline</h3>
-                    <p>Engineered a robust NLP pipeline to process the CoLA dataset, successfully parsing over 1,000 complex linguistic records.</p>
-                    <ul class="task-list small-text">
-                        <li>Applied tokenization, stop-word removal, stemming, and lemmatization.</li>
-                        <li>Reduced raw text volume by 40% for faster classification.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card glass-card">
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span>Python</span>
-                    </div>
-                    <h3>Snake Game</h3>
-                    <p>Coded a fully functional Python Snake Game featuring accurate collision detection algorithms and real-time score tracking.</p>
-                    <ul class="task-list small-text">
-                        <li>Maintained a consistent 60 FPS frame rate for smooth gameplay.</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
-        <div class="skills-container">
-            <div class="skill-category glass-card">
-                <h3><i class="fas fa-code"></i> Languages</h3>
-                <div class="skill-tags">
-                    <span>Python</span><span>Java</span><span>C</span>
-                </div>
-            </div>
-            <div class="skill-category glass-card">
-                <h3><i class="fas fa-brain"></i> AI / ML & Data Science</h3>
-                <div class="skill-tags">
-                    <span>Machine Learning</span><span>NLP</span><span>Generative AI</span><span>Deep Learning</span><span>NLTK</span>
-                </div>
-            </div>
-            <div class="skill-category glass-card">
-                <h3><i class="fas fa-chart-bar"></i> Data Analysis</h3>
-                <div class="skill-tags">
-                    <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Power BI</span>
-                </div>
-            </div>
-            <div class="skill-category glass-card">
-                <h3><i class="fas fa-database"></i> Databases & Cloud</h3>
-                <div class="skill-tags">
-                    <span>MySQL</span><span>MongoDB</span><span>ServiceNow (CSA)</span>
-                </div>
-            </div>
-            <div class="skill-category glass-card">
-                <h3><i class="fas fa-tools"></i> Tools & Tech</h3>
-                <div class="skill-tags">
-                    <span>Git</span><span>Streamlit</span><span>Raspberry Pi</span><span>Unity 3D</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="section">
-        <h2 class="section-title">Key <span class="highlight">Achievements</span></h2>
-        
-        <div class="glass-card">
-            <ul class="event-list">
-                    <li>
-                        <i class="fas fa-medal"></i>
-                        <div>
-                            <h4>2nd Prize in National Level Project Expo</h4>
-                            <p>Recognized for outstanding innovation and technical implementation.</p>
-                            <div class="achievement-gallery">
-                                <img src="./assets/expo1.jpg" alt="Project Expo" onerror="this.style.display='none'">
-                                <img src="./assets/expo2.jpg" alt="Project Expo" onerror="this.style.display='none'">
-                                <img src="./assets/expo3.jpg" alt="Project Expo" onerror="this.style.display='none'">
-                                <img src="./assets/expo4.jpg" alt="Project Expo" onerror="this.style.display='none'">
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-image-container">
+                                <img src="./assets/profile.jpg" alt="V Swetha" class="profile-img" onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';">
+                                <div class="avatar-fallback" id="avatarFallback">
+                                    <span class="avatar-initials">VS</span>
+                                </div>
+                            </div>
+                            <div class="profile-badge-overlay">
+                                <div class="mini-verified-badge" title="Globally Verified Developer">
+                                    <i class="fas fa-certificate text-green"></i>
+                                    <span>MongoDB & Oracle Certified</span>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-users-cog"></i>
-                        <div>
-                            <h4>Ikya Technical Quiz Coordinator</h4>
-                            <p>Successfully coordinated the Ikya Technical Quiz event at the Inter-College Fest.</p>
-                            <div class="achievement-gallery">
-                                <img src="./assets/quiz1.jpg" alt="Ikya Technical Quiz" onerror="this.style.display='none'">
-                                <img src="./assets/quiz2.jpg" alt="Ikya Technical Quiz" onerror="this.style.display='none'">
-                                <img src="./assets/quiz3.jpg" alt="Ikya Technical Quiz" onerror="this.style.display='none'">
+                        <div class="terminal-stats-card">
+                            <div class="terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="terminal-title">quick_stats.json</span>
+                            </div>
+                            <div class="terminal-body">
+                                <code>
+                                    <span class="token-key">"education"</span>: <span class="token-str">"B.Tech CSE (AI & ML)"</span>,<br>
+                                    <span class="token-key">"cgpa"</span>: <span class="token-num">8.93</span>,<br>
+                                    <span class="token-key">"top_award"</span>: <span class="token-str">"2nd Prize National Expo"</span>,<br>
+                                    <span class="token-key">"internship"</span>: <span class="token-str">"Infosys Springboard"</span>
+                                </code>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-baseball-bat-ball"></i>
-                        <div>
-                            <h4>Cricket Tournament Winner</h4>
-                            <p>Champions of the Inter-Department Cricket Tournament.</p>
-                            <div class="achievement-gallery">
-                                <img src="./assets/cricket1.jpg" alt="Cricket" onerror="this.style.display='none'">
-                                <img src="./assets/cricket2.jpg" alt="Cricket" onerror="this.style.display='none'">
-                                <img src="./assets/cricket3.jpg" alt="Cricket" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-theater-masks"></i>
-                        <div>
-                            <h4>Mime Contest Participant</h4>
-                            <p>Participated in the Mime Contest at the Inter-College Fest, showcasing creativity.</p>
-                            <div class="achievement-gallery">
-                                <img src="./assets/mime1.jpg" alt="Mime" onerror="this.style.display='none'">
-                                <img src="./assets/mime2.jpg" alt="Mime" onerror="this.style.display='none'">
-                                <img src="./assets/mime3.jpg" alt="Mime" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-robot"></i>
-                        <div>
-                            <h4>Agentic AI Workshops</h4>
-                            <p>Attended specialized workshops focusing on Agentic AI and built automation workflows.</p>
-                        </div>
-                    </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <h2 class="section-title">Global <span class="highlight">Certifications</span></h2>
-        
-        <div class="glass-card">
-            <ul class="cert-list">
-                    <li class="global-cert">
-                        <i class="fas fa-award"></i> Oracle Certified Generative AI Professional
-                    </li>
-                    <li class="global-cert">
-                        <i class="fas fa-award"></i> MongoDB Certified Associate Developer
-                    </li>
-                    <li class="global-cert">
-                        <i class="fas fa-award"></i> Welcome to ServiceNow
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle"></i> NPTEL – The Joy of Computing Using Python
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle"></i> Data Analytics Virtual Job Simulation
-                    </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
-        <div class="contact-card glass-card">
-            <p>I'm always open to discussing AI/ML projects, software engineering roles, or creative tech collaborations.</p>
-            <div class="contact-info">
-                <a href="mailto:swethasweth1923@gmail.com" class="contact-item">
-                    <i class="fas fa-envelope"></i> swethasweth1923@gmail.com
-                </a>
-                <a href="tel:+919182899591" class="contact-item">
-                    <i class="fas fa-phone"></i> +91 9182899591
-                </a>
+                    </div>
+                </div>
             </div>
-            <div class="social-links-footer">
-                <a href="https://github.com/swethasweth19" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/v-swetha-5b9996329" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </header>
+
+        <!-- Globally Verified Credentials Highlight Banner -->
+        <section id="credentials" class="section credentials-section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <div class="eyebrow-badge">
+                        <i class="fas fa-shield-halved"></i> Industry Validated
+                    </div>
+                    <h2 class="section-title">Globally Verified <span class="gradient-text">Certifications</span></h2>
+                    <p class="section-subtitle">Internationally recognized, proctored examinations demonstrating software development and AI mastery.</p>
+                </div>
+
+                <div class="featured-credentials-grid">
+                    <!-- MongoDB Global Certification (Highlighted as requested) -->
+                    <div class="credential-card mongodb-highlight">
+                        <div class="credential-glow"></div>
+                        <div class="credential-badge-ribbon">
+                            <i class="fas fa-star"></i> Globally Verified
+                        </div>
+                        <div class="credential-icon-box mongo-box">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="credential-content">
+                            <div class="credential-issuer">MongoDB Inc. • Official Certification</div>
+                            <h3 class="credential-title">MongoDB Certified Associate Developer</h3>
+                            <p class="credential-desc">
+                                Rigorous, proctored verification covering high-performance schema design, aggregation pipelines, document modeling, ACID transactions, and indexing strategies.
+                            </p>
+                            <div class="credential-meta">
+                                <span class="meta-tag"><i class="fas fa-check-circle"></i> Industry Standard</span>
+                                <span class="meta-tag"><i class="fas fa-database"></i> NoSQL Architect</span>
+                            </div>
+                        </div>
+                        <div class="credential-status verified">
+                            <i class="fas fa-circle-check"></i>
+                            <span>Global Verified Status</span>
+                        </div>
+                    </div>
+
+                    <!-- Oracle GenAI Certification -->
+                    <div class="credential-card oracle-highlight">
+                        <div class="credential-glow"></div>
+                        <div class="credential-badge-ribbon oracle-ribbon">
+                            <i class="fas fa-star"></i> Globally Verified
+                        </div>
+                        <div class="credential-icon-box oracle-box">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="credential-content">
+                            <div class="credential-issuer">Oracle University • Global Credential</div>
+                            <h3 class="credential-title">Oracle Certified Generative AI Professional</h3>
+                            <p class="credential-desc">
+                                Validates professional competence in Large Language Model (LLM) fine-tuning, RAG (Retrieval-Augmented Generation) architectures, vector databases, and semantic search.
+                            </p>
+                            <div class="credential-meta">
+                                <span class="meta-tag"><i class="fas fa-check-circle"></i> GenAI Engineering</span>
+                                <span class="meta-tag"><i class="fas fa-microchip"></i> LLM & RAG</span>
+                            </div>
+                        </div>
+                        <div class="credential-status verified">
+                            <i class="fas fa-circle-check"></i>
+                            <span>Global Verified Status</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Certifications Bar -->
+                <div class="secondary-certs-row">
+                    <div class="mini-cert-item">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h4>Welcome to ServiceNow / Micro-Certified</h4>
+                            <span>ServiceNow Platform Fundamentals & System Administration Workflows</span>
+                        </div>
+                    </div>
+                    <div class="mini-cert-item">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h4>NPTEL: The Joy of Computing Using Python</h4>
+                            <span>IIT Madras / Elite Certification in Algorithmic Problem Solving</span>
+                        </div>
+                    </div>
+                    <div class="mini-cert-item">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h4>Data Analytics Virtual Job Simulation</h4>
+                            <span>Forage (Accenture) • Data modeling, visualization & predictive insights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (High-Impact 3-Column Grid) -->
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">
+                        <i class="fas fa-code-branch"></i> Engineering Work
+                    </div>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Real-world applications built with end-to-end architectures, modern frameworks, and measurable impact.</p>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: MedAssist AI -->
+                    <article class="project-card" data-project="medassist">
+                        <div class="project-header">
+                            <div class="project-pill-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">FastAPI</span>
+                                <span class="tech-badge">scikit-learn</span>
+                            </div>
+                            <span class="project-metric"><i class="fas fa-heart-pulse"></i> Clinical AI</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">MedAssist AI</h3>
+                            <p class="project-tagline">Intelligent disease prediction and clinical risk assessment platform.</p>
+                            
+                            <p class="project-description">
+                                Clinical decision-support backend that parses patient symptoms, runs predictive classification models, calculates multi-level risk scores (Low to Critical), and delivers personalized treatment recommendations.
+                            </p>
+
+                            <!-- Situation & How I Handled It Accordion -->
+                            <div class="project-deepdive">
+                                <button class="deepdive-toggle" aria-expanded="false">
+                                    <span class="toggle-text"><i class="fas fa-lightbulb"></i> Situation & Engineering Solution</span>
+                                    <i class="fas fa-chevron-down chevron-icon"></i>
+                                </button>
+                                <div class="deepdive-content">
+                                    <div class="deepdive-block">
+                                        <div class="block-label challenge"><i class="fas fa-triangle-exclamation"></i> The Challenge</div>
+                                        <p>Processing multidimensional patient symptom vectors in real time while maintaining sub-second inference speeds, secure session management, and robust error handling for diagnostic data.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label solution"><i class="fas fa-wrench"></i> How I Handled It</div>
+                                        <p>Architected an asynchronous FastAPI backend in Python 3.11 with scikit-learn models for inference. Configured JWT authentication, structured SQLite schemas, and optimized endpoints for low-latency diagnostic predictions.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label result"><i class="fas fa-chart-line"></i> The Outcome</div>
+                                        <p>Sub-second prediction latency, robust clinical symptom categorization, and containerized deployment via Docker.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/swethasweth19/MedAssist" target="_blank" rel="noopener noreferrer" class="card-btn live-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#contact" class="card-btn code-btn">
+                                <i class="fas fa-envelope"></i> Discuss Project
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Trash to Tech -->
+                    <article class="project-card highlight-border" data-project="trashtotech">
+                        <div class="project-header">
+                            <div class="project-pill-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">MobileNetV2</span>
+                                <span class="tech-badge">Computer Vision</span>
+                            </div>
+                            <span class="project-metric award"><i class="fas fa-trophy"></i> 2nd Prize National Expo</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">Trash to Tech</h3>
+                            <p class="project-tagline">Smart waste classification system powered by deep learning & 4R methodology.</p>
+                            
+                            <p class="project-description">
+                                Machine learning-based automated waste segregation platform that classifies municipal waste streams into recyclables, biodegradable, and hazardous materials.
+                            </p>
+
+                            <!-- Situation & How I Handled It Accordion -->
+                            <div class="project-deepdive">
+                                <button class="deepdive-toggle" aria-expanded="false">
+                                    <span class="toggle-text"><i class="fas fa-lightbulb"></i> Situation & Engineering Solution</span>
+                                    <i class="fas fa-chevron-down chevron-icon"></i>
+                                </button>
+                                <div class="deepdive-content">
+                                    <div class="deepdive-block">
+                                        <div class="block-label challenge"><i class="fas fa-triangle-exclamation"></i> The Challenge</div>
+                                        <p>Real-world waste items exhibit heavy deformation, varying lighting conditions, and cluttered backgrounds, leading to low classification accuracy in standard off-the-shelf CNN models.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label solution"><i class="fas fa-wrench"></i> How I Handled It</div>
+                                        <p>Engineered a comprehensive image augmentation corpus and fine-tuned MobileNetV2 with transfer learning for optimal edge latency. Built a 4R (Reduce, Reuse, Recycle, Recover) mapping system that dictates actionable sorting steps.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label result"><i class="fas fa-chart-line"></i> The Outcome</div>
+                                        <p>Achieved &gt;85% classification accuracy across complex waste items. Awarded 2nd Prize out of 50+ collegiate teams at the National Level Project Expo before 500+ attendees.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="#expo-gallery" class="card-btn live-btn">
+                                <i class="fas fa-camera"></i> View Expo Photos
+                            </a>
+                            <a href="https://github.com/swethasweth19" target="_blank" rel="noopener noreferrer" class="card-btn code-btn">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: SmartMirror-Vox -->
+                    <article class="project-card" data-project="smartmirror">
+                        <div class="project-header">
+                            <div class="project-pill-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Raspberry Pi</span>
+                                <span class="tech-badge">Speech APIs</span>
+                            </div>
+                            <span class="project-metric"><i class="fas fa-microchip"></i> IoT & Edge</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">SmartMirror-Vox</h3>
+                            <p class="project-tagline">IoT voice-enabled interactive smart mirror with custom wake words.</p>
+                            
+                            <p class="project-description">
+                                A voice-activated edge computing display device built on Raspberry Pi, supporting hands-free voice commands ("Hey Jarvis/Lisa") for weather, news, calendars, and system controls.
+                            </p>
+
+                            <!-- Situation & How I Handled It Accordion -->
+                            <div class="project-deepdive">
+                                <button class="deepdive-toggle" aria-expanded="false">
+                                    <span class="toggle-text"><i class="fas fa-lightbulb"></i> Situation & Engineering Solution</span>
+                                    <i class="fas fa-chevron-down chevron-icon"></i>
+                                </button>
+                                <div class="deepdive-content">
+                                    <div class="deepdive-block">
+                                        <div class="block-label challenge"><i class="fas fa-triangle-exclamation"></i> The Challenge</div>
+                                        <p>Executing continuous speech recognition, real-time widget rendering, and multiple external API queries simultaneously caused high CPU throttling and audio input delay on low-power hardware.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label solution"><i class="fas fa-wrench"></i> How I Handled It</div>
+                                        <p>Decoupled voice trigger listening using an efficient local wake-word engine ("Hey Jarvis/Lisa"). Built asynchronous backend polling scripts in Python that batched and cached API responses (weather, news feeds) to eliminate display lag.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label result"><i class="fas fa-chart-line"></i> The Outcome</div>
+                                        <p>Cut response latency to under 2 seconds and boosted overall system processing efficiency by 30% without hardware overheating.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/swethasweth19" target="_blank" rel="noopener noreferrer" class="card-btn live-btn">
+                                <i class="fas fa-bolt"></i> Architecture
+                            </a>
+                            <a href="https://github.com/swethasweth19" target="_blank" rel="noopener noreferrer" class="card-btn code-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: NLP Linguistic Pipeline -->
+                    <article class="project-card" data-project="nlp-pipeline">
+                        <div class="project-header">
+                            <div class="project-pill-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">NLTK</span>
+                                <span class="tech-badge">NLP Corpus</span>
+                            </div>
+                            <span class="project-metric"><i class="fas fa-language"></i> NLP Pipeline</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">NLP Linguistic Pipeline</h3>
+                            <p class="project-tagline">Automated syntactic parsing, lemmatization & feature reduction pipeline.</p>
+                            
+                            <p class="project-description">
+                                High-efficiency NLP text-processing framework developed on the Corpus of Linguistic Acceptability (CoLA), optimizing unstructured text for machine learning models.
+                            </p>
+
+                            <!-- Situation & How I Handled It Accordion -->
+                            <div class="project-deepdive">
+                                <button class="deepdive-toggle" aria-expanded="false">
+                                    <span class="toggle-text"><i class="fas fa-lightbulb"></i> Situation & Engineering Solution</span>
+                                    <i class="fas fa-chevron-down chevron-icon"></i>
+                                </button>
+                                <div class="deepdive-content">
+                                    <div class="deepdive-block">
+                                        <div class="block-label challenge"><i class="fas fa-triangle-exclamation"></i> The Challenge</div>
+                                        <p>Complex natural language datasets contain extensive morphological noise, grammatical irregularities, and redundant tokens that degrade classification training performance.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label solution"><i class="fas fa-wrench"></i> How I Handled It</div>
+                                        <p>Engineered a multi-phase preprocessing pipeline implementing WordNet lemmatization, regex tokenization, custom stop-word filtering, and n-gram vectorization.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label result"><i class="fas fa-chart-line"></i> The Outcome</div>
+                                        <p>Reduced raw feature space by 40% while preserving grammatical context, accelerating downstream model training velocity significantly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/swethasweth19/Lemmetization" target="_blank" rel="noopener noreferrer" class="card-btn live-btn">
+                                <i class="fas fa-code-commit"></i> Pipeline Details
+                            </a>
+                            <a href="https://github.com/swethasweth19/Lemmetization" target="_blank" rel="noopener noreferrer" class="card-btn code-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Snake Game -->
+                    <article class="project-card" data-project="snake-game">
+                        <div class="project-header">
+                            <div class="project-pill-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Pygame / GUI</span>
+                                <span class="tech-badge">Algorithms</span>
+                            </div>
+                            <span class="project-metric"><i class="fas fa-gamepad"></i> Game Dev</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">Python Snake Game</h3>
+                            <p class="project-tagline">Classic interactive 2D arcade game with precise collision logic.</p>
+                            
+                            <p class="project-description">
+                                Designed and implemented a responsive Python game featuring grid-based collision detection algorithms, real-time score tracking, and smooth frame rate optimization.
+                            </p>
+
+                            <!-- Situation & How I Handled It Accordion -->
+                            <div class="project-deepdive">
+                                <button class="deepdive-toggle" aria-expanded="false">
+                                    <span class="toggle-text"><i class="fas fa-lightbulb"></i> Situation & Engineering Solution</span>
+                                    <i class="fas fa-chevron-down chevron-icon"></i>
+                                </button>
+                                <div class="deepdive-content">
+                                    <div class="deepdive-block">
+                                        <div class="block-label challenge"><i class="fas fa-triangle-exclamation"></i> The Challenge</div>
+                                        <p>Managing real-time input event handling, boundary collision checks, and tail segment updates without stuttering or input queue desync.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label solution"><i class="fas fa-wrench"></i> How I Handled It</div>
+                                        <p>Engineered an efficient queue-based position update algorithm and frame-rate clock limiter to keep execution at a stable 60 FPS.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label result"><i class="fas fa-chart-line"></i> The Outcome</div>
+                                        <p>Fluid gameplay, accurate spatial collision response, and clean modular Python code structure.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/swethasweth19" target="_blank" rel="noopener noreferrer" class="card-btn live-btn">
+                                <i class="fas fa-play"></i> Game Engine
+                            </a>
+                            <a href="https://github.com/swethasweth19" target="_blank" rel="noopener noreferrer" class="card-btn code-btn">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Algorithmic Engineering (LeetCode & Core CS) -->
+                    <article class="project-card" data-project="algorithms">
+                        <div class="project-header">
+                            <div class="project-pill-stack">
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">Data Structures</span>
+                            </div>
+                            <span class="project-metric"><i class="fas fa-cube"></i> Problem Solving</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">Algorithmic Problem Solving</h3>
+                            <p class="project-tagline">Optimized solutions for complex graph, dynamic programming & tree problems.</p>
+                            
+                            <p class="project-description">
+                                Continuous algorithmic repository containing verified solutions for LeetCode challenges, focusing on optimal time complexity, memory allocation, and clean modular code.
+                            </p>
+
+                            <!-- Situation & How I Handled It Accordion -->
+                            <div class="project-deepdive">
+                                <button class="deepdive-toggle" aria-expanded="false">
+                                    <span class="toggle-text"><i class="fas fa-lightbulb"></i> Situation & Engineering Solution</span>
+                                    <i class="fas fa-chevron-down chevron-icon"></i>
+                                </button>
+                                <div class="deepdive-content">
+                                    <div class="deepdive-block">
+                                        <div class="block-label challenge"><i class="fas fa-triangle-exclamation"></i> The Challenge</div>
+                                        <p>Overcoming strict time/space complexity limits in large test-case sets (e.g. O(N^2) naive approaches causing Time Limit Exceeded errors).</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label solution"><i class="fas fa-wrench"></i> How I Handled It</div>
+                                        <p>Employed two-pointer techniques, monotonic stacks, binary indexed trees, and memoization/bottom-up DP tables in C++ and Java.</p>
+                                    </div>
+                                    <div class="deepdive-block">
+                                        <div class="block-label result"><i class="fas fa-chart-line"></i> The Outcome</div>
+                                        <p>Clean, tested implementations demonstrating solid computer science fundamentals, ready for technical interviews.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/swethasweth19/leetcode" target="_blank" rel="noopener noreferrer" class="card-btn live-btn">
+                                <i class="fas fa-code"></i> Solutions Repo
+                            </a>
+                            <a href="https://github.com/swethasweth19" target="_blank" rel="noopener noreferrer" class="card-btn code-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section (HR Quick-Scan Badges) -->
+        <section id="skills" class="section skills-section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <div class="eyebrow-badge">
+                        <i class="fas fa-layer-group"></i> Technical Competencies
+                    </div>
+                    <h2 class="section-title">Skills & <span class="gradient-text">Proficiencies</span></h2>
+                    <p class="section-subtitle">Categorized for fast recruiter scanning. Built through hands-on projects, industry certifications, and enterprise training.</p>
+                </div>
+
+                <div class="skills-categories-grid">
+                    
+                    <!-- Category 1: Languages -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <i class="fas fa-code cat-icon"></i>
+                            <h3 class="cat-title">Programming Languages</h3>
+                        </div>
+                        <ul class="badge-list">
+                            <li class="pill-badge primary-badge"><i class="fab fa-python"></i> Python</li>
+                            <li class="pill-badge primary-badge"><i class="fab fa-java"></i> Java</li>
+                            <li class="pill-badge"><i class="fas fa-c"></i> C</li>
+                            <li class="pill-badge"><i class="fas fa-file-code"></i> C++</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Web & Backend -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <i class="fas fa-server cat-icon"></i>
+                            <h3 class="cat-title">Web & Backend Frameworks</h3>
+                        </div>
+                        <ul class="badge-list">
+                            <li class="pill-badge primary-badge"><i class="fas fa-bolt"></i> FastAPI</li>
+                            <li class="pill-badge primary-badge"><i class="fas fa-flask"></i> Flask</li>
+                            <li class="pill-badge primary-badge"><i class="fas fa-chart-line"></i> Streamlit</li>
+                            <li class="pill-badge"><i class="fab fa-html5"></i> HTML5</li>
+                            <li class="pill-badge"><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li class="pill-badge"><i class="fas fa-network-wired"></i> RESTful APIs</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Databases & Cloud (MongoDB Highlighted) -->
+                    <div class="skill-category-card highlight-card">
+                        <div class="cat-header">
+                            <i class="fas fa-database cat-icon"></i>
+                            <h3 class="cat-title">Databases & Cloud</h3>
+                            <span class="card-sub-badge"><i class="fas fa-certificate"></i> Globally Verified</span>
+                        </div>
+                        <ul class="badge-list">
+                            <li class="pill-badge verified-pill" title="MongoDB Certified Associate Developer">
+                                <i class="fas fa-leaf"></i> MongoDB <span class="pill-check">✓ Certified</span>
+                            </li>
+                            <li class="pill-badge primary-badge"><i class="fas fa-server"></i> MySQL</li>
+                            <li class="pill-badge primary-badge"><i class="fas fa-cloud"></i> ServiceNow (CSA)</li>
+                            <li class="pill-badge"><i class="fas fa-database"></i> SQLite</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4: AI/ML & Data Science -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <i class="fas fa-brain cat-icon"></i>
+                            <h3 class="cat-title">AI / ML & Data Science</h3>
+                        </div>
+                        <ul class="badge-list">
+                            <li class="pill-badge primary-badge"><i class="fas fa-robot"></i> Machine Learning</li>
+                            <li class="pill-badge primary-badge"><i class="fas fa-comment-dots"></i> NLP</li>
+                            <li class="pill-badge primary-badge"><i class="fas fa-wand-magic-sparkles"></i> Generative AI</li>
+                            <li class="pill-badge"><i class="fas fa-network-wired"></i> Deep Learning</li>
+                            <li class="pill-badge"><i class="fas fa-cubes"></i> scikit-learn</li>
+                            <li class="pill-badge"><i class="fas fa-eye"></i> MobileNetV2</li>
+                            <li class="pill-badge"><i class="fas fa-book"></i> NLTK</li>
+                            <li class="pill-badge"><i class="fas fa-table"></i> Pandas & NumPy</li>
+                            <li class="pill-badge"><i class="fas fa-chart-pie"></i> Power BI</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 5: Tools & Hardware -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <i class="fas fa-toolbox cat-icon"></i>
+                            <h3 class="cat-title">Tools, DevOps & Hardware</h3>
+                        </div>
+                        <ul class="badge-list">
+                            <li class="pill-badge"><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                            <li class="pill-badge"><i class="fab fa-docker"></i> Docker</li>
+                            <li class="pill-badge"><i class="fas fa-microchip"></i> Raspberry Pi (IoT)</li>
+                            <li class="pill-badge"><i class="fas fa-vial"></i> Integration Testing</li>
+                            <li class="pill-badge"><i class="fas fa-cubes"></i> Unity 3D</li>
+                            <li class="pill-badge"><i class="fas fa-terminal"></i> Linux / CLI</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education (Clean Minimalist Timeline) -->
+        <section id="experience" class="section experience-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">
+                        <i class="fas fa-briefcase"></i> Background
+                    </div>
+                    <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+                    <p class="section-subtitle">Structured career journey with enterprise engineering and academic milestones.</p>
+                </div>
+
+                <div class="two-column-timeline">
+                    <!-- Column 1: Experience -->
+                    <div class="timeline-column">
+                        <h3 class="column-heading"><i class="fas fa-laptop-code"></i> Professional Experience</h3>
+                        
+                        <div class="vertical-timeline">
+                            
+                            <!-- Timeline item 1: Infosys -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-box">
+                                    <div class="timeline-top">
+                                        <h4 class="timeline-role">Infosys Springboard Internship 7.0</h4>
+                                        <span class="timeline-date">August 2026 – Present</span>
+                                    </div>
+                                    <div class="timeline-company">Infosys • Batch 3 (Competitive Selection)</div>
+                                    <p class="timeline-summary">
+                                        Selected for the premier technical internship program bridging core academic computer science with real-world enterprise architectures.
+                                    </p>
+                                    <ul class="timeline-bullets">
+                                        <li>Mastering enterprise software engineering practices, scalable backend design, and production ML pipelines.</li>
+                                        <li>Engaging in specialized engineering modules targeting 100% completion in enterprise technologies.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Timeline item 2: Technical Coordinator -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-box">
+                                    <div class="timeline-top">
+                                        <h4 class="timeline-role">Technical Quiz Coordinator</h4>
+                                        <span class="timeline-date">2025</span>
+                                    </div>
+                                    <div class="timeline-company">Ikya Inter-College Tech Fest</div>
+                                    <p class="timeline-summary">
+                                        Led the organization, technical question curation, and event execution for the flagship inter-collegiate technical quiz competition with hundreds of participants.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Education -->
+                    <div class="timeline-column">
+                        <h3 class="column-heading"><i class="fas fa-graduation-cap"></i> Academic Journey</h3>
+                        
+                        <div class="vertical-timeline">
+                            
+                            <!-- Timeline item 3: B.Tech -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-box">
+                                    <div class="timeline-top">
+                                        <h4 class="timeline-role">B.Tech in Computer Science (AI & ML)</h4>
+                                        <span class="timeline-date">2023 – 2027</span>
+                                    </div>
+                                    <div class="timeline-company">Nagarjuna College of Engineering and Technology, Bengaluru</div>
+                                    <div class="timeline-grade-badge">
+                                        <i class="fas fa-award"></i> Current CGPA: <strong>8.93 / 10</strong>
+                                    </div>
+                                    <p class="timeline-summary">
+                                        Deep focus on Artificial Intelligence, Machine Learning, Data Structures & Algorithms, Natural Language Processing, and Distributed Systems.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Timeline item 4: Intermediate -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-box">
+                                    <div class="timeline-top">
+                                        <h4 class="timeline-role">Intermediate (MPC)</h4>
+                                        <span class="timeline-date">2021 – 2023</span>
+                                    </div>
+                                    <div class="timeline-company">Narayana Junior College, Hindupur</div>
+                                    <div class="timeline-grade-badge">
+                                        <i class="fas fa-chart-simple"></i> Score: <strong>90%</strong>
+                                    </div>
+                                    <p class="timeline-summary">
+                                        Mathematics, Physics, and Chemistry foundation with emphasis on problem solving and quantitative reasoning.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Accomplishments with Real Photo Galleries & Interactive Lightbox -->
+        <section id="achievements" class="section achievements-section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <div class="eyebrow-badge">
+                        <i class="fas fa-trophy"></i> Recognition & Real Moments
+                    </div>
+                    <h2 class="section-title">Achievements & <span class="gradient-text">Event Galleries</span></h2>
+                    <p class="section-subtitle">Photographic records of competitive accolades, tech expos, quiz coordination, and sports victories. Click any photo to view full-size.</p>
+                </div>
+
+                <div class="achievements-cards-grid">
+                    
+                    <!-- Card 1: National Expo Winner with Expo Photos -->
+                    <div class="achievement-feature-card prize-winner" id="expo-gallery">
+                        <div class="achieve-card-header">
+                            <div class="achieve-icon-wrapper">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="achieve-heading-box">
+                                <div class="achieve-badge">2nd Prize Winner</div>
+                                <h3 class="achieve-title">National Level Project Expo</h3>
+                                <p class="achieve-venue">Tech Vision 2026 • CMR Institute of Technology, Bengaluru</p>
+                            </div>
+                        </div>
+
+                        <p class="achieve-description">
+                            Awarded 2nd Prize for architecting "Trash to Tech" — a deep learning waste classification model using MobileNetV2 and 4R sustainability mapping, demonstrated live before 500+ attendees and jury members.
+                        </p>
+
+                        <!-- Real Expo Photo Gallery Strip -->
+                        <div class="event-photo-strip">
+                            <div class="photo-strip-label"><i class="fas fa-images"></i> Event & Team Photos (Click to enlarge):</div>
+                            <div class="photo-grid">
+                                <div class="photo-thumbnail" data-src="./assets/expo1.jpg" data-caption="Tech Vision 2026 National Expo at CMRIT campus gate with our engineering team">
+                                    <img src="./assets/expo1.jpg" alt="CMRIT Project Expo Gate" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                                <div class="photo-thumbnail" data-src="./assets/expo2.jpg" data-caption="Live Project Setup: Workstations running Trash to Tech classification models and IoT display modules">
+                                    <img src="./assets/expo2.jpg" alt="Project Live Hardware & ML Demo" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                                <div class="photo-thumbnail" data-src="./assets/expo3.jpg" data-caption="Team in the Digital Library & Auditorium at CMRIT awaiting the final results">
+                                    <img src="./assets/expo3.jpg" alt="Auditorium Presentation" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                                <div class="photo-thumbnail" data-src="./assets/expo4.jpg" data-caption="Our Team after winning the 2nd Prize at the National Project Expo, CMRIT B-Block">
+                                    <img src="./assets/expo4.jpg" alt="National Expo Winners Team Photo" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Quiz Coordinator with Quiz Photos -->
+                    <div class="achievement-feature-card">
+                        <div class="achieve-card-header">
+                            <div class="achieve-icon-wrapper">
+                                <i class="fas fa-users-gear"></i>
+                            </div>
+                            <div class="achieve-heading-box">
+                                <div class="achieve-badge">Leadership</div>
+                                <h3 class="achieve-title">Ikya Technical Quiz Lead</h3>
+                                <p class="achieve-venue">Inter-College Fest Coordinator</p>
+                            </div>
+                        </div>
+
+                        <p class="achieve-description">
+                            Curated algorithmic and technical rounds, coordinated live scoring systems, and managed stage operations for participants across multiple engineering institutes.
+                        </p>
+
+                        <!-- Real Quiz Photo Gallery Strip -->
+                        <div class="event-photo-strip">
+                            <div class="photo-strip-label"><i class="fas fa-images"></i> Event Highlights (Click to enlarge):</div>
+                            <div class="photo-grid">
+                                <div class="photo-thumbnail" data-src="./assets/quiz1.jpg" data-caption="Ikya Technical Quiz in session with stage coordination and participant teams">
+                                    <img src="./assets/quiz1.jpg" alt="Ikya Technical Quiz Event" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                                <div class="photo-thumbnail" data-src="./assets/quiz2.jpg" data-caption="Auditorium crowd and participants engaging in technical buzzer rounds">
+                                    <img src="./assets/quiz2.jpg" alt="Auditorium Quiz Audience" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                                <div class="photo-thumbnail" data-src="./assets/quiz3.jpg" data-caption="Organizing committee and lead coordinators managing stage operations">
+                                    <img src="./assets/quiz3.jpg" alt="Coordination Team Photo" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Cricket Winners with Cricket Photos -->
+                    <div class="achievement-feature-card prize-winner">
+                        <div class="achieve-card-header">
+                            <div class="achieve-icon-wrapper">
+                                <i class="fas fa-baseball-bat-ball"></i>
+                            </div>
+                            <div class="achieve-heading-box">
+                                <div class="achieve-badge">Champions</div>
+                                <h3 class="achieve-title">Inter-Department Cricket Winners</h3>
+                                <p class="achieve-venue">Athletics & Department Tournament</p>
+                            </div>
+                        </div>
+
+                        <p class="achieve-description">
+                            Champions of the annual Inter-Department Cricket Tournament, demonstrating athletic stamina, strategic field management, and high-pressure teamwork.
+                        </p>
+
+                        <!-- Real Cricket Photo Gallery Strip -->
+                        <div class="event-photo-strip">
+                            <div class="photo-strip-label"><i class="fas fa-images"></i> Championship Moments (Click to enlarge):</div>
+                            <div class="photo-grid">
+                                <div class="photo-thumbnail" data-src="./assets/cricket1.jpg" data-caption="Championship celebration and team victory moment on the cricket field">
+                                    <img src="./assets/cricket1.jpg" alt="Cricket Winners Trophy" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                                <div class="photo-thumbnail" data-src="./assets/cricket2.jpg" data-caption="Team celebration on the sports grounds after the final match win">
+                                    <img src="./assets/cricket2.jpg" alt="Cricket Team On Field" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                                <div class="photo-thumbnail" data-src="./assets/cricket3.jpg" data-caption="Post-tournament champions gathering with department medals">
+                                    <img src="./assets/cricket3.jpg" alt="Cricket Tournament Champions" loading="lazy">
+                                    <div class="photo-overlay"><i class="fas fa-magnifying-glass-plus"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Agentic AI Workshops -->
+                    <div class="achievement-feature-card">
+                        <div class="achieve-card-header">
+                            <div class="achieve-icon-wrapper">
+                                <i class="fas fa-brain-circuit"></i>
+                            </div>
+                            <div class="achieve-heading-box">
+                                <div class="achieve-badge">Specialization</div>
+                                <h3 class="achieve-title">Agentic AI & Advanced Workshops</h3>
+                                <p class="achieve-venue">Industry Practical Sessions</p>
+                            </div>
+                        </div>
+
+                        <p class="achieve-description">
+                            Completed intensive training on Agentic AI frameworks, autonomous agent loops, prompt engineering, and tool-augmented generation pipelines.
+                        </p>
+                        <div class="achieve-tags">
+                            <span class="meta-tag"><i class="fas fa-check"></i> Agent Workflows</span>
+                            <span class="meta-tag"><i class="fas fa-check"></i> Tool Augmentation</span>
+                            <span class="meta-tag"><i class="fas fa-check"></i> Autonomous Loops</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <div class="contact-card-box">
+                    <div class="contact-card-glow"></div>
+                    <div class="contact-header">
+                        <div class="eyebrow-badge">
+                            <i class="fas fa-paper-plane"></i> Let's Talk
+                        </div>
+                        <h2 class="section-title">Ready to <span class="gradient-text">Collaborate?</span></h2>
+                        <p class="section-subtitle">
+                            I am actively seeking Software Development and AI/ML Engineering roles. Whether you have an open opportunity, a technical question, or an exciting project, my inbox is open!
+                        </p>
+                    </div>
+
+                    <div class="contact-methods-grid">
+                        <div class="contact-method-card">
+                            <i class="fas fa-envelope method-icon"></i>
+                            <div class="method-info">
+                                <span class="method-label">Direct Email</span>
+                                <a href="mailto:swethasweth1923@gmail.com" class="method-link" id="emailLink">swethasweth1923@gmail.com</a>
+                            </div>
+                            <button class="copy-btn" id="copyEmailBtn" title="Copy Email to Clipboard">
+                                <i class="fas fa-copy"></i>
+                                <span class="copy-tooltip">Copy</span>
+                            </button>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <i class="fas fa-phone method-icon"></i>
+                            <div class="method-info">
+                                <span class="method-label">Phone</span>
+                                <a href="tel:+919182899591" class="method-link">+91 91828 99591</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <i class="fas fa-location-dot method-icon"></i>
+                            <div class="method-info">
+                                <span class="method-label">Location</span>
+                                <span class="method-link">Bengaluru, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-action-bar">
+                        <a href="https://github.com/swethasweth19" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> GitHub Profile
+                        </a>
+                        <a href="https://linkedin.com/in/v-swetha-5b9996329" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                        </a>
+                        <a href="mailto:swethasweth1923@gmail.com?subject=Opportunity%20Discussion%20-%20V%20Swetha" class="btn btn-accent">
+                            <i class="fas fa-paper-plane"></i> Send Direct Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Interactive Lightbox Modal for Real Photos -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close Image Viewer">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-img-box">
+                <img src="" alt="Full view" id="lightboxImg">
+            </div>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Clean Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-brand">&lt;V SWETHA /&gt;</span>
+                <p>Engineered for high performance, accessibility, and clean design.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 V Swetha. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Back to top <i class="fas fa-arrow-up"></i></a>
+                </div>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 V Swetha. Built with passion.</p>
     </footer>
+
+    <!-- Toast Notification for Copy -->
+    <div class="toast" id="toastMessage">Email copied to clipboard!</div>
 
     <script src="script.js"></script>
 </body>
